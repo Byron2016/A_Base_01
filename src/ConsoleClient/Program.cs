@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Services;
+using System;
 
 namespace ConsoleClient
 {
@@ -6,7 +7,8 @@ namespace ConsoleClient
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            TestService.TestConnection();
+            Console.Read();
         }
     }
 }
